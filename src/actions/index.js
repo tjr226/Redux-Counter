@@ -13,19 +13,19 @@ export const DECREMENT = 'DECREMENT';
 // export const increment = count => {
 //   return ++count;
 // };
- export const increment = () => {
+ export const increment = count => {
    console.log("increment");
    return {
      type: INCREMENT,
-    //  payload: count
+     payload: count
    }
  }
 
- export const decrement = () => {
+ export const decrement = count => {
    console.log("decrement");
   return {
     type: DECREMENT,
-    // payload: count
+    payload: count
   }
 }
 
