@@ -16,9 +16,14 @@ class Counter extends Component {
     };
 
     render() {
+        // console.log('this.props')
+        // console.log(this)
 
         return (
             <p>
+                {/* working, commented out */}
+                {/* Clicked: {this.props.count} times */}
+
                 Clicked: {this.props.count} times
                 <button onClick={this.props.increment}>
                     +
