@@ -13,15 +13,21 @@ export const DECREMENT = 'DECREMENT';
 // export const increment = count => {
 //   return ++count;
 // };
- export const increment = () => count => {
+ export const increment = () => {
+   console.log("increment");
    return {
      type: INCREMENT,
-     payload: payload
+    //  payload: count
    }
  }
 
+ export const decrement = () => {
+   console.log("decrement");
+  return {
+    type: DECREMENT,
+    // payload: count
+  }
+}
 
-export const decrement = count => {
-  // Fill in this function
-  return --count;
-};
+
+
